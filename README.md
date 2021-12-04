@@ -1,7 +1,7 @@
 # eShop-Microservices 
 Microservices Architecture and Implementation on .NET 5
 ![image](https://user-images.githubusercontent.com/39750674/144705542-da806176-2ba9-422c-b8ea-a106918cb97c.png)
-Run The Project
+# Run The Project
 You will need the following tools:
 
 Visual Studio 2019
@@ -10,41 +10,42 @@ Docker Desktop
 Installing
 Follow these steps to get your development environment set up: (Before Run Start the Docker Desktop)
 
-Clone the repository
-Once Docker for Windows is installed, go to the Settings > Advanced option, from the Docker icon in the system tray, to configure the minimum amount of memory and CPU like so:
-Memory: 4 GB
-CPU: 2
-At the root directory which include docker-compose.yml files, run below command:
+1. Clone the repository
+2. Once Docker for Windows is installed, go to the Settings > Advanced option, from the Docker icon in the system tray, to configure the minimum amount of memory and CPU like so:
+# Memory: 4 GB
+# CPU: 2
+3. At the root directory which include docker-compose.yml files, run below command:
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
-Wait for docker compose all microservices. That’s it! (some microservices need extra time to work so please wait if not worked in first shut)
 
-You can launch microservices as below urls:
+4. Wait for docker compose all microservices. That’s it! (some microservices need extra time to work so please wait if not worked in first shut)
 
-Catalog API -> http://host.docker.internal:8000/swagger/index.html
+5. You can launch microservices as below urls:
 
-Basket API -> http://host.docker.internal:8001/swagger/index.html
+# Catalog API -> http://host.docker.internal:8000/swagger/index.html
 
-Discount API -> http://host.docker.internal:8002/swagger/index.html
+# Basket API -> http://host.docker.internal:8001/swagger/index.html
 
-Ordering API -> http://host.docker.internal:8004/swagger/index.html
+# Discount API -> http://host.docker.internal:8002/swagger/index.html
 
-Shopping.Aggregator -> http://host.docker.internal:8005/swagger/index.html
+# Ordering API -> http://host.docker.internal:8004/swagger/index.html
 
-API Gateway -> http://host.docker.internal:8010/Catalog
+# Shopping.Aggregator -> http://host.docker.internal:8005/swagger/index.html
 
-Rabbit Management Dashboard -> http://host.docker.internal:15672 -- guest/guest
+# API Gateway -> http://host.docker.internal:8010/Catalog
 
-Portainer -> http://host.docker.internal:9000 -- admin/admin1234
+# Rabbit Management Dashboard -> http://host.docker.internal:15672 -- guest/guest
 
-pgAdmin PostgreSQL -> http://host.docker.internal:5050 -- admin@aspnetrun.com/admin1234
+# Portainer -> http://host.docker.internal:9000 -- admin/admin1234
 
-Elasticsearch -> http://host.docker.internal:9200 -- To Be Develop
+# pgAdmin PostgreSQL -> http://host.docker.internal:5050 -- admin@aspnetrun.com/admin1234
 
-Kibana -> http://host.docker.internal:5601 -- To Be Develop
+# Elasticsearch -> http://host.docker.internal:9200 -- To Be Develop
 
-Web Status -> http://host.docker.internal:8007 -- To Be Develop
+# Kibana -> http://host.docker.internal:5601 -- To Be Develop
 
-Web UI -> http://host.docker.internal:8006
+# Web Status -> http://host.docker.internal:8007 -- To Be Develop
 
-Launch http://host.docker.internal:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
-Launch http://host.docker.internal:8006 in your browser to view the Web UI. You can use Web project in order to call microservices over API Gateway. When you checkout the basket you can follow queue record on RabbitMQ dashboard.
+# Web UI -> http://host.docker.internal:8006
+
+6. Launch http://host.docker.internal:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
+7. Launch http://host.docker.internal:8006 in your browser to view the Web UI. You can use Web project in order to call microservices over API Gateway. When you checkout the basket you can follow queue record on RabbitMQ dashboard.
