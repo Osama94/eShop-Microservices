@@ -12,8 +12,8 @@ Follow these steps to get your development environment set up: (Before Run Start
 
 1. Clone the repository
 2. Once Docker for Windows is installed, go to the Settings > Advanced option, from the Docker icon in the system tray, to configure the minimum amount of memory and CPU like so:
-# Memory: 4 GB
-# CPU: 2
+. Memory: 4 GB
+. CPU: 2
 3. At the root directory which include docker-compose.yml files, run below command:
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 
